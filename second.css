@@ -1,15 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Exo|IBM+Plex+Sans+Condensed|Inconsolata');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Exo|IBM+Plex+Sans+Condensed|Inconsolata');
+@import url('https://fonts.googleapis.com/css?family=Courgette|Dancing+Script|Exo|IBM+Plex+Sans+Condensed|Inconsolata|Noticia+Text');
 body{
 	margin: 0 auto;
-	padding: 0;
+	padding: 0px;
 }
-nav{
-	background-color:grey;
-	height: 50px;
+header{
 	display: flex;
+	background-color:rgb(153, 153, 153);
 	justify-content: space-between;
 	align-items: center;
 	position: sticky;
 	top: 0;
+
+}
+nav{
+	
+	height: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
 
 }
 nav ul{
@@ -40,167 +51,136 @@ li a:hover{
 	transition: all 2s;
 	color: white;
 }
-h2{
-	text-align: center;
+#block{
+	height: 90vh;
+	background-image: url(http://fanoboi.com/black-white/195/black-and-white-city-wallpaper-1366x768.jpg);
 }
-
-/*#first_block{
-	background-image: url(img/4.png);
-	background:cover;
-	height: 75vh;
-}*/
-#first{
-	display: flex;
-	justify-content:flex-end;
-	background-color:  #9fbfdf;
-}
-#foto{
-	margin-right: 150px;
-	margin-top: 20px;
-}
-#foto img{
-	border-radius:50%;
-}
-#Boss{
-	width: 500px;
-}
-#first_block{
-	display: flex;
-	justify-content: center;
-}
-
-section{
-	display: flex;
-	justify-content: space-around;
-	background-color:#d1e0e0;
-}
-h1{
-	text-align: center;
+#textPort p{
 	margin: 0px;
 }
-.hhh{
-		background-color: #d1e0e0;
-
-}
-.block1_foto1{
-	width: 300px;
-	overflow:hidden;
-}
-
-.block1_foto1 img{
-	width: 100%;
-	-moz-transition: all 1s ease-out;
-    -o-transition: all 1s ease-out;
-    -webkit-transition: all 1s ease-out;
-
-}
-.block1_foto1 img:hover{
-	-webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -o-transform: scale(1.2);
-}
-
-
-
-.block1_foto2{
-	width: 300px;
-	overflow:hidden;
-}
-.block1_foto2 img{
-	width: 100%;
-	-moz-transition: all 1s ease-out;
-    -o-transition: all 1s ease-out;
-    -webkit-transition: all 1s ease-out;
-}
-
-.block1_foto2 img:hover{
-	-webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -o-transform: scale(1.2);
-}
-
-
-.block2_foto3{
-	width: 300px;
-	overflow:hidden;
-}
-.block2_foto3 img{
-	width: 100%;
-	margin-left: 20px;
-	-moz-transition: all 1s ease-out;
-    -o-transition: all 1s ease-out;
-    -webkit-transition: all 1s ease-out;
-}
-
-.block2_foto3 img:hover{
-	-webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -o-transform: scale(1.2);
-}
-
-
-
-.block2_foto4{
-	width: 300px;
-	overflow:hidden;
-}
-.block2_foto4 img{
-	width: 100%;
-	margin-left: 20px;
-	-moz-transition: all 1s ease-out;
-    -o-transition: all 1s ease-out;
-    -webkit-transition: all 1s ease-out;
-}
-
-.block2_foto4 img:hover{
-	-webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -o-transform: scale(1.2);
-}
-#background{
-	display: flex;
-	justify-content: space-around;
-}
-
-#paragraf1{
-	width: 500px;
-}
-#paragraf2{
-	width: 500px;
-}
-#paragraf3{
-	width: 500px;
-}
-#paragraf4{
-	width: 500px;
-}
-footer{
+#textPort{
+	color: white;
+	font-family: 'Dancing Script', cursive;
+	font-size: 50px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: center;
+	height: 60vh;
 }
-.footBoss{
-	width: 100%;
-	display: flex;
-	justify-content: space-around;
+h2{
+	text-align: center;
+	margin: 0px;
+	font-size: 30px;
+	font-family: 'Courgette', cursive;
 }
-.texth2{
-	margin-top: 10%;
+.text{
+	margin: 0px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.text p{
+	margin-bottom: 0px;
+	margin-left: 25px;
+	margin-right: 25px;
+}
+#block1{
+	background-color: #999999;
 	text-align-last: center;
-	font-family: 'Nanum Gothic', sans-serif;
+
 }
 button{
-	margin-top:50px;
-	margin-bottom: 10px;
-	padding: 10px;
 	width: 150px;
+	height: 40px;
 	border-radius: 50px; 
-	background-color:grey;
+	background-color:black;
 	color: white;
 	border: solid 5px #29292930;
 	transition: all 1s;
+	margin-top: 20px;
+	margin-bottom: 5px;
 }
 button:hover{
 	color: black;
+	background-color: grey;
 	transition: all 1s;
+}
+.btn a{
+	
+	display: flex;
+	justify-content: center;
+	background-color: #999999;
+}
+#contact h1{
+	text-align: center;
+	margin: 0px;
+}
+section{
+	display: flex;
+	justify-content: space-around;
+	border-bottom: 2px solid black;
+	background:  #ffffe6;
+	padding-bottom: 25px;
+	padding-top: 25px;
+}
+a{
+	text-decoration: none;
+}
+#boss1{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-left: 7px;
+	margin-right: 7px;
+	text-align-last: center;
+	border: none;
+}
+#boss2{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-left: 7px;
+	margin-right: 7px;
+	text-align-last: center;
+}
+#boss3{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-left: 7px;
+	margin-right: 7px;
+	text-align-last: center;
+}
+#boss4{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-left: 7px;
+	margin-right: 7px;
+	text-align-last: center;
+}
+footer{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background: #e6e6ff;
+
+}
+h4{
+	margin: 0px;
+}
+input{
+	margin-top: 15px;
+	border-radius: 50px;
+}
+input:last-childe{
+
+}
+#footerBoss{
+	display: flex;
+	flex-direction: column;
+	background-color: #d6e0f5;
+}
+#footer2{
+	width: 500px;
 }
