@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css?family=Exo|IBM+Plex+Sans+Condensed|Inconsolata');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Exo|IBM+Plex+Sans+Condensed|Inconsolata');
+@import url('https://fonts.googleapis.com/css?family=Courgette|Dancing+Script|Exo|IBM+Plex+Sans+Condensed|Inconsolata|Noticia+Text');
+body{
+	margin: 0 auto;
+	padding: 0px;
+}
+header{
+	display: flex;
+	background-color:rgb(153, 153, 153);
+	justify-content: space-between;
+	align-items: center;
+	position: sticky;
+	top: 0;
+
+}
+nav{
+	
+	height: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+
+}
+nav ul{
+	padding: 0;
+	margin: 0px;
+	display: flex;
+	justify-content: flex-end;
+
+	
+}
+nav li{
+	list-style: none;
+	line-height: 1,5;
+	transition: all 3s;
+	text-align: right;
+	padding: 5px;
+
+}
+ li a{
+	text-decoration: none;
+	font-size: 20px;
+	transition: all 1s;
+	color: black;
+	margin-left: 10px;
+	transition: all 2s;
+}
+li a:hover{
+	transition: all 2s;
+	color: white;
+}
+#block{
+	height: 90vh;
+	background-image: url(http://fanoboi.com/black-white/195/black-and-white-city-wallpaper-1366x768.jpg);
+}
+#textPort p{
+	margin: 0px;
+}
+#textPort{
+	color: white;
+	font-family: 'Dancing Script', cursive;
+	font-size: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 60vh;
+}
+h2{
+	text-align: center;
+	margin: 0px;
+	font-size: 30px;
+	font-family: 'Courgette', cursive;
+}
+.text{
+	margin: 0px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.text p{
+	margin-bottom: 0px;
+	margin-left: 25px;
+	margin-right: 25px;
+}
+#block1{
+	background-color: #999999;
+	text-align-last: center;
+
+}
+button{
+	width: 150px;
+	height: 40px;
+	border-radius: 50px; 
+	background-color:black;
+	color: white;
+	border: solid 5px #29292930;
+	transition: all 1s;
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
+button:hover{
+	color: black;
+	background-color: grey;
+	transition: all 1s;
+}
+.btn a{
+	
+	display: flex;
+	justify-content: center;
+	background-color: #999999;
+}
+#contact h1{
+	text-align: center;
+	margin: 0px;
+}
+section{
+	display: flex;
+	justify-content: space-around;
+	border-bottom: 2px solid black;
+	background:  #ffffe6;
+	padding-bottom: 25px;
+	padding-top: 25px;
+}
+a{
+	text-decoration: none;
+}
+#boss1{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-left: 7px;
+	margin-right: 7px;
+	text-align-last: center;
+	border: none;
+}
+#boss2{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-left: 7px;
+	margin-right: 7px;
+	text-align-last: center;
+}
+#boss3{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-left: 7px;
+	margin-right: 7px;
+	text-align-last: center;
+}
+#boss4{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-left: 7px;
+	margin-right: 7px;
+	text-align-last: center;
+}
+footer{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background: #e6e6ff;
+
+}
+h4{
+	margin: 0px;
+}
+input{
+	margin-top: 15px;
+	border-radius: 50px;
+}
+input:last-childe{
+
+}
+#footerBoss{
+	display: flex;
+	flex-direction: column;
+	background-color: #d6e0f5;
+}
+#footer2{
+	width: 500px;
+}
+#form{
+	height: 350px;
+	background: red;
+	border:solid 2px black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
