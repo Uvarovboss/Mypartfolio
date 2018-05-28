@@ -5,7 +5,7 @@ body{
 }
 nav{
 	background-color:grey;
-	height: 50px;
+	height: auto;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -44,19 +44,12 @@ li a:hover{
 h2{
 	text-align: center;
 }
-
-/*#first_block{
-	background-image: url(img/4.png);
-	background:cover;
-	height: 75vh;
-}*/
 #first{
 	display: flex;
 	align-items: center;
 	background-color:  #9fbfdf;
 }
 #foto{
-	margin-right: 150px;
 	margin-top: 20px;
 }
 #foto img{
@@ -64,7 +57,7 @@ h2{
 }
 #Boss{
 	text-align:center;
-	width: 700px;
+	width: 70%;
 }
 
 footer{
@@ -76,6 +69,8 @@ footer{
 }
 #aaa{
 	display: flex;
+	justify-content: space-around;
+	width: 800px;
 }
 #cont1{
 	display: flex;
@@ -96,9 +91,6 @@ h3{
 h2{
 
 }
-#kepp{
-	margin-left: 130px;
-}
 #cone1{
 	display: flex;
 }
@@ -114,7 +106,6 @@ h2{
 
 form {
 	width: 380px;
-	margin-right: 50px;
 	padding: 30px 20px 20px 20px;
 	background: #fafafa;
 	border: 1px solid #ebebeb;
@@ -154,4 +145,55 @@ input {
 .buttonBlue {
   background: #4a89dc;
   text-shadow: 1px 1px 0 rgba(39, 110, 204, .5);
+}
+@media screen and (max-width: 1000px){
+	article{
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+	}	
+	footer{
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+@media screen and (max-width: 675px){
+	nav{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	nav ul{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}
+@media screen and (max-width: 500px){
+	#foto{
+		display: flex;
+		justify-content: center;
+		
+	}
+	#foto img{
+		width: 400px;
+	}
+	#kepp{
+		display: none;
+	}
+}
+@media screen and (max-width: 400px){
+	#foto{
+		width: 250px;
+	}
+	#foto img{
+		width: 250px;
+		height: 250px;
+	}
+	#contact{
+		width: 230px;
+		margin-top: 30px;
+		margin-right: 90px;
+	}
 }
