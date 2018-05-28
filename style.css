@@ -53,7 +53,7 @@ h2{
 #first{
 	display: flex;
 	align-items: center;
-	background-color:  #e6ffff;
+	background-color:  #9fbfdf;
 }
 #foto{
 	margin-right: 150px;
@@ -68,7 +68,7 @@ h2{
 }
 
 footer{
-	background-color: silver;
+	background-color: sil
 	height: 300px;
 	display: flex;
 	align-items: center;
