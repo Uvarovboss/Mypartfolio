@@ -1,6 +1,7 @@
 body{
 	margin: 0 auto;
 	padding: 0;
+	max-width: 1800px;
 }
 nav{
 	background-color:grey;
@@ -51,8 +52,8 @@ h2{
 }*/
 #first{
 	display: flex;
-	justify-content:flex-end;
-	background-color:  #9fbfdf;
+	align-items: center;
+	background-color:  #e6ffff;
 }
 #foto{
 	margin-right: 150px;
@@ -62,152 +63,95 @@ h2{
 	border-radius:50%;
 }
 #Boss{
-	width: 500px;
-}
-#first_block{
-	display: flex;
-	justify-content: center;
+	text-align:center;
+	width: 700px;
 }
 
-section{
-	display: flex;
-	justify-content: space-around;
-	background-color:#d1e0e0;
-}
-h1{
-	text-align: center;
-	margin: 0px;
-}
-.hhh{
-		background-color: #d1e0e0;
-
-}
-.block1_foto1{
-	width: 300px;
-	overflow:hidden;
-}
-
-.block1_foto1 img{
-	width: 100%;
-	-moz-transition: all 1s ease-out;
-    -o-transition: all 1s ease-out;
-    -webkit-transition: all 1s ease-out;
-
-}
-.block1_foto1 img:hover{
-	-webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -o-transform: scale(1.2);
-}
-
-
-
-.block1_foto2{
-	width: 300px;
-	overflow:hidden;
-}
-.block1_foto2 img{
-	width: 100%;
-	-moz-transition: all 1s ease-out;
-    -o-transition: all 1s ease-out;
-    -webkit-transition: all 1s ease-out;
-}
-
-.block1_foto2 img:hover{
-	-webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -o-transform: scale(1.2);
-}
-
-
-.block2_foto3{
-	width: 300px;
-	overflow:hidden;
-}
-.block2_foto3 img{
-	width: 100%;
-	margin-left: 20px;
-	-moz-transition: all 1s ease-out;
-    -o-transition: all 1s ease-out;
-    -webkit-transition: all 1s ease-out;
-}
-
-.block2_foto3 img:hover{
-	-webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -o-transform: scale(1.2);
-}
-
-
-
-.block2_foto4{
-	width: 300px;
-	overflow:hidden;
-}
-.block2_foto4 img{
-	width: 100%;
-	margin-left: 20px;
-	-moz-transition: all 1s ease-out;
-    -o-transition: all 1s ease-out;
-    -webkit-transition: all 1s ease-out;
-}
-
-.block2_foto4 img:hover{
-	-webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -o-transform: scale(1.2);
-}
-#background{
-	display: flex;
-	justify-content: space-around;
-}
-
-#paragraf1{
-	width: 500px;
-}
-#paragraf2{
-	width: 500px;
-}
-#paragraf3{
-	width: 500px;
-}
-#paragraf4{
-	width: 500px;
-}
 footer{
+	background-color: silver;
+	height: 300px;
 	display: flex;
-	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+#aaa{
+	display: flex;
+}
+#cont1{
+	display: flex;
 	align-items: center;
 }
-.footBoss{
-	width: 100%;
+#cont2{
 	display: flex;
-	justify-content: space-around;
+	align-items: center;
 }
-.texth2{
-	margin-top: 10%;
-	text-align-last: center;
-	font-family: 'Nanum Gothic', sans-serif;
+#cont3{
+	display: flex;
+	align-items: center;
 }
-button{
-	margin-top:50px;
-	margin-bottom: 10px;
-	padding: 10px;
-	width: 150px;
-	border-radius: 50px; 
-	background-color:grey;
-	color: white;
-	border: solid 5px #29292930;
-	transition: all 1s;
+h3{
+	margin: 0;
+	margin-left: 20px;
 }
-button:hover{
-	color: black;
-	transition: all 1s;
+h2{
+
+}
+#kepp{
+	margin-left: 130px;
+}
+#cone1{
+	display: flex;
+}
+#cone2{
+	display: flex;
+}
+#cone3{
+	display: flex;
+}
+#cone4{
+	display: flex;
 }
 
-form{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+form {
+	width: 380px;
+	margin-right: 50px;
+	padding: 30px 20px 20px 20px;
+	background: #fafafa;
+	border: 1px solid #ebebeb;
+	box-shadow: rgba(0,0,0,0.14902) 0px 1px 1px 0px,rgba(0,0,0,0.09804) 0px 1px 2px 0px;
+}
+
+.group { 
+	position: relative; 
+	margin-bottom: 45px; 
+}
+
+input {
+	font-size: 18px;
+	background: #fafafa;
+	color: #636363;
+	width: 100%;
+	outline: none;
+	border: none;
+	border-radius: 0;
+	border-bottom: 1px solid #757575;
+}
+
+
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  margin: .3em 0 1em 0;
+  width: 100%;
+  color: #fff;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  border: 0;
+  border-bottom: 2px solid #3160B6;
+  cursor: pointer;
+}
+.buttonBlue {
+  background: #4a89dc;
+  text-shadow: 1px 1px 0 rgba(39, 110, 204, .5);
 }
