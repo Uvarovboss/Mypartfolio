@@ -31,10 +31,9 @@ request(url);
 
 function display(img,repos,data,name,followers,url) {
 	document.getElementById('imege').innerHTML = '<img src="'+ img +'">';
-	document.getElementById('Data').innerHTML = 'Дата регистрации :'+ data;
 	document.getElementById('reposit').innerHTML = 'Количество Репоз :'+ repos;
 	document.getElementById('name').innerHTML = 'Name:'+ name;
-	document.getElementById('followers').innerHTML = 'Подписки:'+ followers
+	// document.getElementById('followers').innerHTML = 'Подписки:'+ followers
 	document.getElementById("atr").setAttribute("href", url)
 }
 //Курс валют
@@ -116,3 +115,24 @@ sortArr.onclick =function(){
 	}
 	pragrahNew.innerHTML="Готово" + a;
 }
+
+function fibo() {
+    var inp = document.getElementById('numberFibo').value;
+    var fibonumber = 0;
+    var fibosum = 0;
+    var fiboarrey = [];
+    var a = 0;
+    var b = 1;
+    for (var i = 0; i < inp; i++) {
+        var c = a + b;
+        a = b;
+        b = c;
+        fiboarrey.push(a);
+        fibonumber = a;
+        fibosum += a;
+    }
+    document.getElementById('display').innerHTML = 'Вказане число: ' + fibonumber + '<br>';
+    document.getElementById('display').innerHTML += 'Ряд чисел: ' + fiboarrey + '<br>';
+    document.getElementById('display').innerHTML += 'Сума чисел: ' + fibosum;
+}
+document.getElementById('bt').onclick = fibo;

@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Courgette|Dancing+Script|Exo|IBM+Plex+Sans+Condensed|Inconsolata|Noticia+Text');
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script');
 body{
-	margin: 0 auto;
+	margin: 0;
 	max-width: 1800px;
 	padding: 0px;
 	background-color: silver;
@@ -69,13 +69,13 @@ li a:hover{
 	width: 90%;
 	height: 80vh;
 }*/
-#image_block{
-	width: 95%;
-}
 #backg_Text{
-	width: 100%;
-	display: flex;
-	justify-content: center;
+   background-image: url(https://images.wallpaperscraft.ru/image/kniga_podveska_chasy_chb_67427_1280x720.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+    min-height: 80vh;
 }
 #image_block img{
 	width: 100%;
@@ -83,41 +83,51 @@ li a:hover{
 }
 #hr{
 	display: flex;
+	background-color: white;
 }
 #relativ{
 	font-family: 'Dancing Script', cursive;
-	color: white;
+	color: black;
 	font-size: 50px;
 	width: 100%;
 	text-align: center;
 	position: absolute;
 	top:170px;
-	/*clear: both;*/
 }
 .block_one{
 	display: flex;	
-	flex-wrap: wrap;
-	justify-content: center;
+	flex-direction: column;
 	align-items: center;
-	margin-top: 50px;
+	min-height: 600px;
+	background-color: white;
+	padding-top: 70px;
 
 }
 .imegeTxt{
-	display: flex;
-	justify-content: center;
+	margin-top: 50px;
+
 }
 .img img{
-	width: 650px;
+	width: 250px;
+	border-radius: 50%;
+	    border: 1px solid;
+    /*padding: 10px;*/
+    box-shadow: 2px 2px 8px 5px #888888;
 }
 #centr{
 	display: flex;
 	justify-content: center;
+	margin-bottom: -50px;
+
 }
 #centr a{
 	height: 40px;
 }
+#centr a button{
+	background-color: white;
+	border:solid 2px red;
+}
 #bttn{
-	margin-top: 40px;
 	width: 180px;
 	height: 50px;
 	background-color: red;
@@ -125,52 +135,17 @@ li a:hover{
 	border:none;
 	cursor: pointer;
 	outline: none;
+	transition: all 1s;
 
 }
+#bttn:hover{
+	background-color: red;
+	color: white;
+	transition: all 1s;
+}
 .colum{
-	display: flex;
-	flex-direction: column;
-	margin-top: 50px;
-	margin-top: -140px;
-	padding: 20px;
-}
-.qqq{
-	margin-top: 150px;
-	margin-left: 200px;
-	width: 400px;
-	height: 80px;
 	text-align: center;
-}
-.qqq p{
-	border-right: 2px solid red;
-}
-.www{
-	margin-top:15px;
-	width: 400px;
-	height: 80px;
-	text-align: center;
-}
-.www p{
-	border-left: 2px solid red;
-}
-.eee{
-	margin-top: 15px;
-	margin-left: 200px;
-	width: 400px;
-	height: 80px;
-	text-align: center;
-}
-.eee p{
-	border-right: 2px solid red;
-}
-.rrr{
-	margin-top: 15px;
-	width: 400px;
-	height: 80px;
-	text-align: center;
-}
-.rrr p{
-	border-left: 2px solid red;
+	padding: 50px;
 }
 p{
 	margin: 0;
@@ -182,68 +157,83 @@ p{
 section{
 	display: flex;
 	flex-direction: column;
-
-	margin-top: 100px;
-}
-#img_one{
-	display: flex;
+	align-items: center;
 	justify-content: center;
+	background-color: white;
+	padding-top: 50px;
 }
+
 #img_two{
 	display: flex;
 	justify-content: center;
 }
-#img1{
-	width: 25%;
-
-	margin-left: 30px;
+.img_one{
+	display: flex;
+	justify-content:center;
+	flex-wrap: wrap;
 }
-#img1 img{
+.texthov{
+	display: flex;
 	width: 100%;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
-#img2{
-	width: 25%;
-	margin-left: 30px;
+.img1{
+ 	position: relative;
+ 	font-family: Cuprum, Arial, Helvetica, sans-serif;
+ 	width: 25%;
+ 	height: 300px;
+ 	margin: 10px;
+	overflow: hidden;
 }
-#img2 img{
-	width: 100%;
+.img1 img{
+ 	width: 100%;
+ 	transition: 0s;
+ 	border: 2px solid grey;
 }
-#img3{
-	width: 25%;
-	margin-left: 30px;
+.texthov{
+ 	position: absolute;
+ 	top: 15%;
+ 	color: #ffffff;
+ 	z-index: 10;
 }
-#img3 img{
-	width: 100%;
+.texthov h1{
+	 margin-bottom: 20px;
+ 	font-size: 30px;
+ 	transform: scale(0);
+ 	transition: .5s;
 }
-#img4{
-	width: 25%;
-	margin-left: 30px;
-	margin-top: 15px;
+a.bt{
+ 	color: #ffffff;
+ 	text-decoration: none;
+ 	text-transform: uppercase;
+ 	border: 2px solid #ffffff;
+ 	padding:10px 30px;
+ 	border-radius: 8px;
+	 opacity: 0;
+ 	transition: .2s ease-in-out;
 }
-#img4 img{
-	width: 100%;
+.img1:hover img{
+ 	transform: rotate(-20deg) scale(2);
+ 	filter: blur(1px);
+ 	transition: .8s
 }
-#img5{
-	width: 25%;
-	margin-left: 30px;
-	margin-top: 15px;
+.img1:hover a.bt{
+ 	opacity: 1;
+ 	background-color: red;
+ 	transition: 2s;
 }
-#img5 img{
-	width: 100%;
-}
-#img6{
-	width: 25%;
-	margin-left: 30px;
-	margin-top: 15px;
-}
-#img6 img{
-	width: 100%;
+.img1:hover .texthov h1{
+ 	transform: scale(1);
 }
 #section{
 	background-image: url(http://www.2fons.ru/pic/201405/1920x1080/2fons.ru-2569.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
-	margin-top: 50px;
+	background-attachment: fixed;
+	background-size: cover;
+	min-height: 600px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -253,7 +243,7 @@ section{
 	margin-top: 150px;
 }
 #textfoo{
-	color: white;
+	color: black;
 	font-size: 40px;
 	display: flex;
 	flex-direction: column;
@@ -263,11 +253,17 @@ section{
 #bbt{
 	width: 180px;
 	height: 50px;
-	background-color: red;
+	border:solid 2px red;
+	font-size: 20px;
 	border-radius: 50px;
-	border:none;
 	cursor: pointer;
 	outline: none;
+	transition: all 2s;
+}
+#bbt:hover{
+	background-color: red;
+	color: white;
+	transition: all 1s;
 }
 
 #footer2{
@@ -300,8 +296,8 @@ h3{
 	margin: 0;
 	margin-left: 20px;
 }
-h2{
-
+h1{
+	margin: 0;
 }
 #cone1{
 	display: flex;
@@ -382,6 +378,19 @@ input {
 	}
 }
 
+@media screen and (max-width: 780px){
+	.texthov{
+		margin-top: -30px;
+		font-size: 10px;
+	}
+	.img1:first-child{
+		
+	}
+	#img_two{
+		
+	}
+
+}
 @media screen and (max-width: 750px){
 	header{
 		display: flex;
@@ -402,6 +411,9 @@ input {
 	#image_block img{
 		width: 100%;
 	}
+	.img1{
+		height: 180px;
+	}
 }
 @media screen and (max-width: 680px){
 	li a{
@@ -413,8 +425,28 @@ input {
 	.img img{
 	width: 400px;
 }
+	.img1{
+		height: 300px;
+	}
+	.texthov{
+		padding-top: 30px;
+	}
 .colum{
 	width: 100%;
+}
+section{
+	justify-content: center;
+}
+.img_one{
+	flex-direction: column;
+	align-items: center;
+}
+#img_two{
+	flex-direction: column;
+	align-items: center;
+}
+.img1{
+	width: 80%;
 }
 }
 @media screen and (max-width: 650px){
@@ -422,7 +454,7 @@ input {
 		display: none;
 	}
 	.img img{
-		width: 600px;
+		width: 300px;
 	}
 	#kepp{
 		display: none;
@@ -430,13 +462,23 @@ input {
 	form{
 		width: 250px;
 	}
+	#bttn{
+		margin-top: 40px;
+	}
 }
 @media screen and (max-width: 620px){
 	.img img{
-		width: 400px;
+		width: 250px;
 	}
 	#textfoo{
 		font-size: 30px;
+	}
+	.texthov{
+		margin-top: -30px;
+		font-size: 5px;
+	}
+	.texthov a{
+		font-size: 10px;
 	}
 
 }
@@ -450,6 +492,28 @@ input {
 	#contact h3{
 		margin: 0;
 	}
+	.texthov{
+		padding-top: 100px;
+	}
+}
+@media screen and (max-width: 400px){
+	.img_one{
+		display: none;
+	}
+	section{
+		justify-content: center;
+
+	}
+	#img_two{
+		margin-left: 30px;
+	}
+	.texthov{
+		margin-top: -30px;
+		font-size: 20px;
+	}
+	.texthov a{
+		font-size: 10px;
+	}
 }
 @media screen and (max-width: 375px){
 	header h1{
@@ -460,5 +524,10 @@ input {
 	}
 	#relativ{
 		font-size: 35px;
+	}
+}
+@media screen and (max-width: 300px){
+	#textfoo{
+		font-size: 15px;
 	}
 }

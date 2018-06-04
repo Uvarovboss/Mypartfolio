@@ -3,51 +3,74 @@ body{
 	padding: 0;
 	max-width: 1800px;
 }
-nav{
-	background-color:grey;
-	height: auto;
+header{
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
+	background-color: black;
 	align-items: center;
 	position: sticky;
-	top: 0;
+	top: 0px;
+	z-index: 2;
+}
+#kiril{
+
+	color: white;
+}
+nav{
+	height: 50px;
+	display: flex;
+	align-items: center;
+
+	
 
 }
 nav ul{
 	padding: 0;
 	margin: 0px;
 	display: flex;
-	justify-content: flex-end;
+	justify-content: center;
 
 	
+}
+ul li:first-child{
+	border:solid 2px red;
 }
 nav li{
 	list-style: none;
 	line-height: 1,5;
-	transition: all 3s;
-	text-align: right;
 	padding: 5px;
+	margin-left: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
 }
  li a{
 	text-decoration: none;
 	font-size: 20px;
-	transition: all 1s;
-	color: black;
-	margin-left: 10px;
-	transition: all 2s;
-}
-li a:hover{
-	transition: all 2s;
 	color: white;
 }
 h2{
 	text-align: center;
 }
+#paralacs{
+	min-height:100vh;
+	background-image: url(https://iso.500px.com/wp-content/uploads/2014/11/2048-61.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
 #first{
 	display: flex;
 	align-items: center;
-	background-color:  #9fbfdf;
+	justify-content: center;
+	background-color: #f2f2f2;
 }
 #foto{
 	margin-top: 20px;
@@ -57,11 +80,12 @@ h2{
 }
 #Boss{
 	text-align:center;
-	width: 70%;
+	width: 60%;
 }
+#info{}
 
 footer{
-	background-color: sil
+	background-color: #f2f2f2;
 	height: 300px;
 	display: flex;
 	align-items: center;
